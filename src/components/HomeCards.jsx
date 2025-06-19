@@ -11,14 +11,19 @@ const HomeCards = () => {
 						<p className="mt-2 mb-4">
 							Browse our React jobs and start your career today
 						</p>
-                        <Button text='Browse Jobs' link ='/jobs.html'/>
+						<Button text="Browse Jobs" link="/jobs.html" />
 					</Card>
 					<Card bg="bg-indigo-100">
 						<h2 className="text-2xl font-bold">For Employers</h2>
 						<p className="mt-2 mb-4">
 							List your job to find the perfect developer for the role
 						</p>
-                        <Button text='Add Job' link='/add-job.html' bg='bg-indigo-500' bgHover='bg-indigo-600' />
+						<Button
+							text="Add Job"
+							link="/add-job.html"
+							bg="bg-indigo-500"
+							bgHover="bg-indigo-600"
+						/>
 					</Card>
 				</div>
 			</div>

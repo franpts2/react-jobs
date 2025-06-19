@@ -21,7 +21,14 @@ const JobListing = ({ job }) => {
 						<i className="fa-solid fa-location-dot text-lg"></i>
 						{job.location}
 					</div>
-                    <Button text='Read More' link ={`/job/${job.id}`} bg='bg-indigo-500' bgHover='bg-indigo-600' centeredText = {true} smallerText = {true} />
+					<Button
+						text="Read More"
+						link={`/job/${job.id}`}
+						bg="bg-indigo-500"
+						bgHover="bg-indigo-600"
+						centeredText={true}
+						smallerText={true}
+					/>
 				</div>
 			</div>
 		</div>
