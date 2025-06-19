@@ -7,7 +7,7 @@ const App = () => {
 		<>
 			<Navbar />
 			<Hero />
-            
+
 			{/* Developers & Employers */}
 			<section className="py-4">
 				<div className="container-xl lg:container m-auto">
