@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Button = ({
 	link,
@@ -11,14 +12,14 @@ const Button = ({
 	smallerText = false,
 }) => {
 	return (
-		<a
-			href={link}
+		<Link
+			to={link}
 			className={`${blockType} ${bg} text-white rounded-${biggerBtn ? 'xl' : 'lg'} ${biggerBtn ? 'py-4 px-6' : 'px-4 py-2'} hover:${bgHover} ${
 				centeredText && "text-center"
 			} ${smallerText && "text-sm"}`}rounded-xl
 		>
 			{text}
-		</a>
+		</Link>
 	);
 };
 
