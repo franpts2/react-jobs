@@ -40,7 +40,7 @@ const JobListing = ({ job }) => {
 					</div>
 					<Button
 						text="Read More"
-						link={`/job/${job.id}`}
+						link={`/jobs/${job.id}`}
 						bg="bg-indigo-500"
 						bgHover="bg-indigo-600"
 						centeredText={true}
