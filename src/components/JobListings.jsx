@@ -7,9 +7,10 @@ const JobListings = ({ isHome = false }) => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+        const apiURL = isHome ? "http://localhost:4000/jobs?_limit=3" : "http://localhost:4000/jobs"
 		const fetchJobs = async () => {
 			try {
-				const res = await fetch("http://localhost:4000/jobs");
+				const res = await fetch(apiURL);
 				const data = await res.json();
 				setJobs(data);
 			} catch (error) {
@@ -27,7 +28,7 @@ const JobListings = ({ isHome = false }) => {
 				<h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
 					{isHome ? "Recent Jobs" : "Browse Jobs"}
 				</h2>
-                
+
 				{loading ? (
 					<Spinner loading={loading} />
 				) : (
